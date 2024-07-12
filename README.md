@@ -48,12 +48,11 @@ For Scalability considerations, in a production environment or if more users con
 
 ### How to use it :
 
+```
 Step 1:Clone the repository and set up project folder
 
 git clone https://github.com/yolotalkies123/url_shortner.git
 cd url_shortner
-
-```
 
 Step2: Activate your Conda environment in interpreter. Make sure to use VScode or PyCharm IDE
 
@@ -62,7 +61,6 @@ Step3:Install dependencies
 pip install -r requirements.txt
 cd app
 
-```
 
 Step4:Run the application in command terminal as,
 
@@ -84,6 +82,8 @@ pytest test_app.py
 pytest test_crud.py
 pytest test_utils.py
 
+```
+
 ### Folder Structure:
 
 url_shortner/
@@ -94,17 +94,17 @@ url_shortner/
 │ │ └── **init**.py # Makes `tests` a package
 │ ├── **init**.py # Makes `app` a package
 │ ├── .env # Environment variables file
-│ ├── [app.py](http://app.py/) # Main FastAPI application file
-│ ├── [crud.py](http://crud.py/) # CRUD operations for database
-│ ├── [database.py](http://database.py/) # Database connection and session setup
-│ ├── [models.py](http://models.py/) # SQLAlchemy models for database tables
-│ ├── [schemas.py](http://schemas.py/) # Pydantic schemas for request and response models
+│ ├── [app.py] # Main FastAPI application file
+│ ├── [crud.py] # CRUD operations for database
+│ ├── [database.py] # Database connection and session setup
+│ ├── [models.py] # SQLAlchemy models for database tables
+│ ├── [schemas.py] # Pydantic schemas for request and response models
 │ ├── test.db # SQLite database file for testing
-│ └── [utils.py](http://utils.py/) # Utility functions
+│ └── [utils.py] # Utility functions
 ├── .dockerignore # Files and directories to ignore in Docker build
 ├── docker-compose.yml # Docker Compose configuration
 ├── Dockerfile # Dockerfile for building the Docker image
-├── [README.md](http://readme.md/) # Project documentation
+├── [README.md] # Project documentation
 └── requirements.txt # Python dependencies
 
 Note : There are many functions for generating shortkeys like Base62 Encoding, Hash, NanoID, Hashing ,Autoincrement, UUID. It is based on the requirement purely.
