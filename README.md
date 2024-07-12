@@ -94,17 +94,17 @@ url_shortner/
 │ │ └── **init**.py # Makes `tests` a package
 │ ├── **init**.py # Makes `app` a package
 │ ├── .env # Environment variables file
-│ ├── [app.py] # Main FastAPI application file
-│ ├── [crud.py] # CRUD operations for database
-│ ├── [database.py] # Database connection and session setup
-│ ├── [models.py] # SQLAlchemy models for database tables
-│ ├── [schemas.py] # Pydantic schemas for request and response models
+│ ├── app.py # Main FastAPI application file
+│ ├── crud.py # CRUD operations for database
+│ ├── database.py # Database connection and session setup
+│ ├── models.py # SQLAlchemy models for database tables
+│ ├── schemas.py # Pydantic schemas for request and response models
 │ ├── test.db # SQLite database file for testing
-│ └── [utils.py] # Utility functions
+│ └── utils.py # Utility functions
 ├── .dockerignore # Files and directories to ignore in Docker build
 ├── docker-compose.yml # Docker Compose configuration
 ├── Dockerfile # Dockerfile for building the Docker image
-├── [README.md] # Project documentation
+├── README.md # Project documentation
 └── requirements.txt # Python dependencies
 
 Note : There are many functions for generating shortkeys like Base62 Encoding, Hash, NanoID, Hashing ,Autoincrement, UUID. It is based on the requirement purely.
