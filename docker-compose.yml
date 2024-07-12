@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fastapi_app:
+    build: .
+    container_name: url_shortner
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app
+    environment:
+      - ENV=development

@@ -1,0 +1,14 @@
+
+# .dockerignore
+# tests
+app/tests/
+
+
+# Exclude development files
+.git
+__pycache__
+*.pyc
+
+# Exclude Docker specific files
+.dockerignore
+.docker
